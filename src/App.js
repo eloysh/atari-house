@@ -1,3 +1,4 @@
+
 // App.js
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -11,9 +12,11 @@ import ConstructionDetails from './ConstructionDetails';
 import propertiesData from './propertiesData';
 import HologramBackground from './HologramBackground';
 
+
 const App = () => {
   return (
     <Router>
+
       <HologramBackground />
       <Menu /> {/* Добавляем компонент Menu здесь */}
       <Suspense fallback={<div>Loading...</div>}>

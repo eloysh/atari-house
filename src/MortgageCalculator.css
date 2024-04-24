@@ -1,7 +1,10 @@
 /* MortgageCalculator.css */
 
 .calculator-container {
+<<<<<<< HEAD
   
+=======
+>>>>>>> ab1e8c522159e5b39be430e741cbc1bdf323c7af
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -21,6 +24,7 @@
     transform: translateY(0);
   }
 }
+<<<<<<< HEAD
 .mortgage-calculator{
   padding: 10px;
 }
@@ -30,6 +34,13 @@
 .input-group{
   text-align: center;
 }
+=======
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+>>>>>>> ab1e8c522159e5b39be430e741cbc1bdf323c7af
 label {
   font-weight: bold;
 }
@@ -41,6 +52,7 @@ input[type="number"] {
   border-radius: 5px;
   font-size: 16px;
 }
+<<<<<<< HEAD
 .calculator-container {
   display: flex;
   flex-direction: column;
@@ -53,12 +65,23 @@ button {
   margin: 5px;
   padding: 10px 10px;
   background-color: #005a87b3;
+=======
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+>>>>>>> ab1e8c522159e5b39be430e741cbc1bdf323c7af
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< HEAD
   font-size: 13px;
   transition: background-color 0.3s ease-in-out;
+=======
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out; /* Плавное изменение цвета при наведении */
+>>>>>>> ab1e8c522159e5b39be430e741cbc1bdf323c7af
 }
 
 button:hover {
@@ -88,14 +111,23 @@ button:hover {
 
 /* Медиа-запросы для адаптивности на мобильных устройствах */
 @media (max-width: 768px) {
+<<<<<<< HEAD
  
+=======
+  .calculator-container {
+    padding: 10px;
+  }
+>>>>>>> ab1e8c522159e5b39be430e741cbc1bdf323c7af
 
   input[type="number"] {
     font-size: 14px;
   }
 
   button {
+<<<<<<< HEAD
     color: #eff0f1c7;
+=======
+>>>>>>> ab1e8c522159e5b39be430e741cbc1bdf323c7af
     font-size: 14px;
   }
 }
