@@ -1,273 +1,127 @@
-.homepage-container {
-  
+/* ConstructionCard.css */
 
-  /* margin: 0 auto; */
+/* Стили для контейнера домашней страницы */
+.homepage-container {
   padding: 20px;
 }
-  .homepage-heading {
-    color: black;
-   
-    text-align: center;
-    /* font-size: 24px; */
-    /* margin-bottom: 20px; */
-}
-  
-  .property-list {
-   
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .property-cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    align-content: space-between;
-    flex-direction: row;
-}
-input[type="text"]::placeholder {
-  color: #999; /* Цвет подсказки */
-}
 
-  .property-card {
-    text-align: center;
-    background-color: #e4d8d8;
-    width: 300px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .property-card h3 {
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .property-card p {
-    margin-bottom: 5px;
-  }
-  
-  .property-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .modal-content {
-    width: 800px;
-    height: 650px;
-    background-color: #abb2bac2;
-    border-radius: 10px;
-    padding: 20px;
-    /* max-width: 80%; */
-    overflow-y: auto;
-    position: relative;
-}
-  
-  .close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 24px;
-  }
-  
-  .gallery {
-    position: relative;
-  }
-  
-  .gallery img {
-    margin-left: 40px;
-    max-width: 87%;
-    height: auto;
-    border-radius: 10px;
-}
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  .property-card h3 {
-    color: #020202;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
-  
-  .property-info {
-    color: #ccc;
-      margin-top: 0px; /* Уменьшаем верхний отступ */
-    }
-  
-  .tabs {
-    margin-bottom: 20px;
-  }
-  
-  .tabs button {
-    background-color: #00000021;
-    border: none;
-    padding: 5px 10px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .tabs button.active {
-    color: #009688;
-    font-weight: bold;
-  }
-  
-  .buy-btn {
-   
-    background-color: #05602a;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin-top: 20px;
-  }
-  /* Мобильная адаптация */
-@media screen and (max-width: 768px) {
-    .property-card {
-     
-      margin-bottom: 20px;
-    }
-    .buy-btn {
-    
-      background-color: #05602a;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      display: block;
-      margin-top: 20px;
-  }
-  .gallery img {
-    margin-bottom: 30px;
-    margin-top: 50px;
-    margin-left: 60px;
-    max-width: 90%;
-    height: auto;
-    border-radius: 10px;
-}
-/* ConstructionDetailsModal.css */
-
-.property-info {
-  margin-bottom: 20px; /* Add margin at the bottom */
-}
-
-.property-info p {
-  margin: 5px 0; /* Add margin to paragraphs */
-}
-
-/* Form styling */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input[type="text"],
-input[type="tel"],
-button {
-  margin-bottom: 10px; /* Add margin between input fields and button */
-  padding: 8px; /* Add padding to input fields and button */
-  border: 1px solid #ccc; /* Add border to input fields and button */
-  border-radius: 5px; /* Add border radius */
-  font-size: 16px; /* Adjust font size */
-}
-
-input[type="text"],
-input[type="tel"] {
-  width: 100%; /* Set input width to 100% */
-}
-
-button[type="submit"] {
-  background-color: #007bff; /* Change background color */
-  color: #fff; /* Change text color */
-  cursor: pointer; /* Add cursor pointer */
-  transition: background-color 0.3s; /* Add transition effect */
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3; /* Change background color on hover */
-}
-
-@media (max-width: 768px) {
-  /* Adjust form styles for mobile devices */
-  form {
-    padding: 0 20px; /* Add padding to the form */
-  }
-
-  input[type="text"],
-  input[type="tel"] {
-    font-size: 14px; /* Reduce font size */
-  }
-}
+/* Стили для заголовка домашней страницы */
 .homepage-heading {
   color: black;
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
 }
-    .modal-content {
-      width: 90%;
-      height: auto;
-      max-height: 90%;
-      padding: 20px;
-    }
-  
-    .close {
-        color: rgb(8 8 8);
-        font-size: 20px;
-        top: 5px;
-        right: 5px;
-    }
-    .modal-content {
-      background-color: white;
-      width: 400px;
-      height: 1000px;
-      border-radius: 10px;
-  }
-    .property-info {
-    display: flex;
-    color: #ccc;
-    margin-top: 0px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: flex-start;
-    align-items: baseline;
+
+/* Стили для списка свойств */
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+/* Стили для карточек свойств */
+.property-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-direction: row;
+}
+
+.property-card {
+  text-align: center;
+  background-color: #e4d8d8;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.property-card h3 {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.property-card p {
+  margin-bottom: 5px;
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  width: 90%;
+  
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.tabs{
+  margin-right: 150px;
+  /* margin-left: 130px; */
+  margin-top: 90px;
+  top: 5px;
+  /* right: 5px; */
+}
+.close {
+  margin-right: 150px;
+  /* margin-left: 130px; */
+  margin-top: 90px;
+  top: 5px;
+  /* right: 5px; */
+}
+
+@media screen and (max-width: 768px) {
+  /* Мобильная адаптация */
+
+  .property-card {
+    width: 100%; /* Полная ширина карточки на мобильных устройствах */
   }
-  .property-card h3 {
-    margin-bottom: 10px; /* Или другое значение отступа, которое вам нужно */
+
+  .modal-content {
+    width: 90%; /* Ширина модального окна на мобильных устройствах */
+
+    max-height: 90%; /* Максимальная высота модального окна на мобильных устройствах */
+    padding: 20px; /* Поля внутри модального окна на мобильных устройствах */
   }
+
+
+    .close {
+      
+        margin-right: 20px;
+    
+      margin-top: 70px;
+      top: 5px;
+      right: 5px;
+  }
+
+
+  .property-info {
+    display: flex; /* Отображение информации о свойстве в одну строку на мобильных устройствах */
+    flex-direction: row; /* Направление элементов информации о свойстве на мобильных устройствах */
+    flex-wrap: wrap; /* Перенос элементов информации о свойстве на новую строку на мобильных устройствах */
+    align-content: stretch; /* Распределение элементов информации о свойстве по высоте на мобильных устройствах */
+    justify-content: flex-start; /* Выравнивание элементов информации о свойстве слева на мобильных устройствах */
+    align-items: baseline; /* Выравнивание элементов информации о свойстве по базовой линии на мобильных устройствах */
+  }
+}

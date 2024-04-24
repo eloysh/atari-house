@@ -1,5 +1,5 @@
 .construction-details-modal {
-<<<<<<< HEAD
+
     position: fixed;
     top: 0;
     left: 0;
@@ -66,6 +66,7 @@ button[type="submit"]:hover {
   input[type="tel"] {
     font-size: 14px; /* Reduce font size */
   }
+  
 }
 
 input[type="text"] {
@@ -140,94 +141,105 @@ input[type="text"] {
   .next-btn {
     right: 10px;
   }
-=======
-  
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.95); /* Полупрозрачный белый цвет */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  max-width: 60%;
-  width: 60%;
-  max-height: 80%;
-  overflow: auto;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
 
-.construction-details-modal.open {
-  opacity: 1;
-}
+/* ConstructionDetailsModal.css */
 
-.modal-content {
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.gallery {
-  position: relative; /* Для позиционирования кнопок внутри галереи */
-  text-align: center; /* Для выравнивания кнопок по центру */
-}
-
-.prev-btn,
-.next-btn {
-  position: absolute; /* Абсолютное позиционирование относительно родительского элемента */
-  top: 50%; /* Расположение по вертикали на 50% от верхнего края галереи */
-  transform: translateY(-50%); /* Сдвиг кнопок вверх на 50% от их собственной высоты, чтобы они оказались по центру */
+/* Стили для модального окна */
+.construction-details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.prev-btn {
-  left: 5%;
-  transform: translate(-50%, -50%);
-}
-.next-btn {
-  right: 170px; /* Расположение кнопки "вперед" справа */
-}
 
+
+/* Стили для информации о свойстве */
 .property-info {
   margin-top: 20px;
 }
 
-/* Анимация */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.property-info p {
+  margin-top: 11px;
+  color: #0d0c0ccc;
+  text-align: center;
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+/* Стили для галереи изображений */
+.gallery {
+  position: relative;
+  width: 100%; /* Изменение ширины на 100% для полного заполнения контейнера */
+  height: 200px; /* Уменьшение высоты галереи на мобильных устройствах */
 }
 
-.fade-enter {
-  animation: fadeIn 0.3s ease-in-out;
+.gallery img {
+
+  /* text-align: center; */
+  /* display: flex; */
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+}
+/* Стили для кнопок переключения изображений */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.fade-exit {
-  animation: fadeOut 0.3s ease-in-out;
+.prev-btn {
+  left: 10px;
 }
->>>>>>> ab1e8c522159e5b39be430e741cbc1bdf323c7af
+
+.next-btn {
+  right: 10px;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .gallery {
+    height: 150px; /* Уменьшение высоты галереи на мобильных устройствах */
+  }
+  .modal-content {
+    background-color: white;
+    width: 370px;
+    height: 800px;
+    border-radius: 10px;
+}
+  .prev-btn,
+  .next-btn {
+    padding: 8px; /* Уменьшение размера кнопок на мобильных устройствах */
+  }
+  .gallery img {
+    /* margin-left: 300px; */
+    /* text-align: center; */
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+}
+}
