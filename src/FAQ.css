@@ -1,0 +1,60 @@
+.faq-container {
+  display: flex;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+/* Заголовок часто задаваемых вопросов */
+.faq-container h1 {
+  color: #007bff; /* Цвет текста */
+  font-size: 24px; /* Размер шрифта */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для FAQ компонента */
+.react-faq-component {
+  background-color: #fff; /* Цвет фона */
+  border: 1px solid #ddd; /* Обводка */
+  border-radius: 5px; /* Скругление углов */
+  padding: 20px; /* Внутренний отступ */
+}
+
+/* Стили для заголовков вопросов */
+.react-faq-component .react-faq-row-title {
+  color: #007bff; /* Цвет текста */
+  font-size: 18px; /* Размер шрифта */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для содержания вопросов */
+.react-faq-component .react-faq-row-content {
+  color: #666; /* Цвет текста */
+  font-size: 16px; /* Размер шрифта */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Медиа запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 10px; /* Уменьшаем внутренний отступ на мобильных устройствах */
+  }
+
+  /* Уменьшаем размеры заголовка и текста вопросов */
+  .faq-container h1 {
+    font-size: 20px;
+  }
+
+  .react-faq-component .react-faq-row-title {
+    font-size: 16px;
+  }
+
+  .react-faq-component .react-faq-row-content {
+    font-size: 14px;
+  }
+}

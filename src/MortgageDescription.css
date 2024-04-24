@@ -1,0 +1,46 @@
+
+.mortgage-program-container {
+
+  padding: 20px;
+}
+  
+  .mortgage-program-section {
+    margin-bottom: 10px;
+  }
+  
+  .how-to-apply-section {
+    margin-top: 30px;
+  }
+  
+  h2 {
+   
+    color: #212122;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #030303;
+}
+ 
+  
+  ul {
+    padding: 10px;
+    
+    list-style-type: disc;
+   
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-evenly;
+}
+  p {
+    color: #141416b3;
+    line-height: 1;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  

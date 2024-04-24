@@ -1,0 +1,107 @@
+.third-block {
+  flex-basis: 33.33%;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.third-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.background-image {
+  width: 430px;
+  height: 326px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.bottom-center-heading {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 280px;
+  background-color: #00000080;
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #efebe9;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: contents;
+    height: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    align-items: center;
+    align-content: center;
+    margin-top: 40px;
+  }
+
+  .first-block {
+    top: 80px;
+    background-image: url('./13.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+  }
+
+  .second-block {
+    width: 280px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-image: url('./41.png');
+  }
+
+  @media screen and (max-width: 768px) {
+    .first-block,
+    .second-block {
+      flex-basis: 100%;
+      margin: 40px;
+    }
+
+    .FormContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: nowrap;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .h4 {
+      top: 30px;
+      text-align: center;
+      font-weight: bold;
+      color: #009688;
+    }
+
+    .second-block {
+     
+      width: 280px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      background-image: url('./41.png');
+    }
+
+    .background-image {
+      width: 430px;
+      height: 300px;
+      margin-top: 70px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}

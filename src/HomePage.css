@@ -1,0 +1,87 @@
+
+
+.footer {
+  background-color: #00000094; /* Цвет фона */
+
+}
+
+.footer-contact h3 {
+  color: #007bff; /* Цвет заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.footer-contact p {
+  color: #ffffff; /* Цвет текста */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.footer-menu h4 {
+  color: #007bff; /* Цвет заголовка */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.footer-menu ul {
+
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin-bottom: 10px; /* Отступ снизу между элементами списка */
+}
+
+.footer-menu .footer-link {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  display: block; /* Делаем ссылки блочными элементами */
+}
+
+.footer-menu .footer-link:hover {
+  text-decoration: underline; /* При наведении добавляем подчеркивание */
+}
+
+.footer-social .social-button {
+  margin-right: 10px; /* Отступ справа между кнопками */
+}
+
+.social-button img {
+  width: 50px; /* Ширина изображения */
+  height: 50px; /* Высота изображения */
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .navbar {
+    padding: 5px;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer {
+
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+  }
+}
+.button {
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
