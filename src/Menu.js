@@ -35,9 +35,6 @@ const Menu = () => {
   return (
     <div>
 
-      <Link to="/" onClick={closeMobileMenu}>
-        <img src={logoImage} alt="Логотип" className="menu-logo" />
-      </Link>
       {windowWidth < 768 ? (
         <div className={`hamburger-menu ${showMobileMenu ? 'active' : ''}`} onClick={() => setShowMobileMenu(!showMobileMenu)}>
           <div className="line"></div>

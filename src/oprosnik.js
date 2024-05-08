@@ -162,19 +162,19 @@ function Oprosnik({ formData }) {
                         <div className="options">
                             <div className={`option ${selectedOption === 'karkasnyi' && 'selected'}`} onClick={() => handleSelectOption('karkasnyi')}>
                                 <input type="radio" name="buildingMaterial" value="karkasnyi" />
-                                <img src="1.jpg" alt="Каркасный дом" />
+                                <img src="./photo/1.jpg" alt="Каркасный дом" />
                                 <span>Каркасный дом</span>
                                 {selectedOption === 'karkasnyi' && <div className="checkmark">&#10003;</div>}
                             </div>
                             <div className={`option ${selectedOption === 'gazablok' && 'selected'}`} onClick={() => handleSelectOption('gazablok')}>
                                 <input type="radio" name="buildingMaterial" value="gazablok" />
-                                <img src="3.jpg" alt="Газаблок/теплоблок" />
+                                <img src="./photo/3.jpg" alt="Газаблок/теплоблок" />
                                 <span>Газаблок/теплоблок</span>
                                 {selectedOption === 'gazablok' && <div className="checkmark">&#10003;</div>}
                             </div>
                             <div className={`option ${selectedOption === 'теплый_контур' && 'selected'}`} onClick={() => handleSelectOption('теплый_контур')}>
                                 <input type="radio" name="buildingMaterial" value="теплый_контур" checked={selectedOption === 'теплый_контур'} onChange={() => { }} />
-                                <img src="5.jpg" alt="Теплый контур" />
+                                <img src="./photo/5.jpg" alt="Теплый контур" />
                                 <span>Теплый контур</span>
                                 {selectedOption === 'теплый_контур' && <div className="checkmark">&#10003;</div>}
                             </div>
@@ -312,27 +312,27 @@ function Oprosnik({ formData }) {
                         <div className="step-title">Какую комплектацию хотите?</div>
                         <div className="options">
                             <div className={`option ${selectedOptionHouse === 'коробка_дома' && 'selected'}`} onClick={() => setSelectedOptionHouse('коробка_дома')}>
-                                <img src="9.jpg" alt="Коробка дома" />
+                                <img src="./photo/9.jpg" alt="Коробка дома" />
                                 <span>Коробка дома</span>
                                 {renderCheckbox(selectedOptionHouse === 'коробка_дома')}
                             </div>
                             <div className={`option ${selectedOptionHouse === 'теплый_контур' && 'selected'}`} onClick={() => setSelectedOptionHouse('теплый_контур')}>
-                                <img src="8.jpg" alt="Теплый контур" />
+                                <img src="./photo/8.jpg" alt="Теплый контур" />
                                 <span>Теплый контур</span>
                                 {renderCheckbox(selectedOptionHouse === 'теплый_контур')}
                             </div>
                             <div className={`option ${selectedOptionHouse === 'предчистовая_отделка' && 'selected'}`} onClick={() => setSelectedOptionHouse('предчистовая_отделка')}>
-                                <img src="10.jpeg" alt="Предчистовая отделка" />
+                                <img src="./photo/10.jpeg" alt="Предчистовая отделка" />
                                 <span>Предчистовая отделка</span>
                                 {renderCheckbox(selectedOptionHouse === 'предчистовая_отделка')}
                             </div>
                             <div className={`option ${selectedOptionHouse === 'под_ключ' && 'selected'}`} onClick={() => setSelectedOptionHouse('под_ключ')}>
-                                <img src="11.jpg" alt="Под ключ" />
+                                <img src="./photo/11.jpg" alt="Под ключ" />
                                 <span>Под ключ</span>
                                 {renderCheckbox(selectedOptionHouse === 'под_ключ')}
                             </div>
                             <div className={`option ${selectedOptionHouse === 'не_знаю' && 'selected'}`} onClick={() => setSelectedOptionHouse('не_знаю')}>
-                                <img src="12.jpg" alt="Не знаю" />
+                                <img src="./photo/12.jpg" alt="Не знаю" />
                                 <span>Не знаю</span>
                                 {renderCheckbox(selectedOptionHouse === 'не_знаю')}
                             </div>

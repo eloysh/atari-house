@@ -41,10 +41,11 @@ const Homepagecatalog = () => {
       id: 1,
       title: 'Проект "МАГНАТ"',
       description: 'Блочный дом',
+      hasHitImage: true,
       price: ' 3 938 058 млн руб',
       location: 'Приморский край',
       squaremeter: '69 кв.м',
-      images: ['/House-1.png', '/House-1_1.png', '/House-1_2.png', '/House-1_3.png'],
+      images: ['./photo/House-1.png', './photo/House-1_1.png', './photo/House-1_2.png', './photo/House-1_3.png'],
       characteristics: 'Характеристики: Коробка дома 10Х7,1, монолитная плита, стены-газаблок 300 мм, внутрение стены 100мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 58 кв.м, Общая площадь: 69 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -56,11 +57,12 @@ const Homepagecatalog = () => {
     {
       id: 2,
       title: 'Проект "ТЕХАС"',
+      hasHitImage: true,
       description: 'Блочный дом',
       price: ' 3 859 034 млн руб',
       location: 'Приморский край',
       squaremeter: '72 кв.м',
-      images: ['/House_2.png', '/House_2_2.png', '/House_2_3.png', '/House_2_4.png'],
+      images: ['./photo/House_2.png', './photo/House_2_2.png', './photo/House_2_3.png', './photo/House_2_4.png'],
       characteristics: 'Характеристики:Коробка дома 10Х7,1 + терраса, монолитная плита, стены-газаблок 300 мм, внутрение стены 100мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 63 кв.м, Общая площадь: 72 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -71,11 +73,12 @@ const Homepagecatalog = () => {
     {
       id: 3,
       title: 'Проект "ВЕГАС"',
+      hasHitImage: true,
       description: 'Блочный дом',
       price: ' 4 487 176 млн руб',
       location: 'Приморский край',
       squaremeter: '79 кв.м',
-      images: ['/House-3.png', '/House-3_1.png', '/House-3_2.png', '/House-3_3.png'],
+      images: ['./photo/House-3.png', './photo/House-3_1.png', './photo/House-3_2.png', './photo/House-3_3.png'],
       characteristics: 'Характеристики:Коробка дома 11Х7, монолитная плита, стены-газаблок 300 мм, внутрение стены 100мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 73 кв.м, Общая площадь: 79 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -86,11 +89,12 @@ const Homepagecatalog = () => {
     {
       id: 4,
       title: 'Проект "ЛАЗУРНЫЙ"',
+      hasHitImage: true,
       description: 'Блочный дом',
       price: ' 3 798 057 млн руб',
       location: 'Приморский край',
       squaremeter: '74 кв.м',
-      images: ['/House-4.png', '/House-4_1.png', '/House-4_2.png', '/House-4_3.png'],
+      images: ['./photo/House-4.png', './photo/House-4_1.png', './photo/House-4_2.png', './photo/House-4_3.png'],
       characteristics: 'Характеристики: Коробка дома 6Х6, монолитная плита, стены-газаблок 300 мм, внутрение стены 100мм, перекрытие-монолитное, лестница-монолитная, кровельный материал-металлочерепица ',
       projectComposition: 'Жилая площадь: 74 кв.м, Общая площадь: 74 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -101,11 +105,12 @@ const Homepagecatalog = () => {
     {
       id: 5,
       title: 'Проект "ГАВАНЬ"',
+      hasHitImage: true,
       description: 'Блочный дом',
       price: ' 3 975 833 млн руб',
       location: 'Приморский край',
       squaremeter: '79 кв.м',
-      images: ['/House-5.png', '/House-5_1.png', '/House-5_2.png', '/House-5_3.png'],
+      images: ['./photo/House-5.png', './photo/House-5_1.png', './photo/House-5_2.png', './photo/House-5_3.png'],
       characteristics: 'Характеристики:Коробка дома 7Х7, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 79 кв.м, Общая площадь: 79 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -116,11 +121,12 @@ const Homepagecatalog = () => {
     {
       id: 6,
       title: 'Проект "МЕРКУРИЙ"',
+      hasHitImage: true,
       description: 'Блочный дом',
       price: ' 3 975 833 млн руб',
       location: 'Приморский край',
       squaremeter: '87 кв.м',
-      images: ['/House-6.png', '/House-6_1.png', '/House-6_2.png', '/House-6_3.png'],
+      images: ['./photo/House-6.png', './photo/House-6_1.png', './photo/House-6_2.png', './photo/House-6_3.png'],
       characteristics: 'Характеристики:Коробка дома 7Х7, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 87 кв.м; Общая площадь: 87 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -135,7 +141,7 @@ const Homepagecatalog = () => {
       price: ' 4 523 515 млн руб',
       location: 'Приморский край',
       squaremeter: '91 кв.м',
-      images: ['/House-7.png', '/House-7_1.png', '/House-7_2.png', '/House-7_3.png'],
+      images: ['./photo/House-7.png', './photo/House-7_1.png', './photo/House-7_2.png', './photo/House-7_3.png'],
       characteristics: 'Характеристики:Коробка дома 7Х8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровеля с утеплением 200мм (металлочерепица)',
       projectComposition: 'Жилая площадь: 91 кв.м; Общая площадь: 91 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -150,7 +156,7 @@ const Homepagecatalog = () => {
       price: ' 5 137 178 млн руб',
       location: 'Приморский край',
       squaremeter: '120 кв.м',
-      images: ['/House-8.png', '/House-8_1.png', '/House-8_2.png', '/House-8_3.png'],
+      images: ['./photo/House-8.png', './photo/House-8_1.png', './photo/House-8_2.png', './photo/House-8_3.png'],
       characteristics: 'Характеристики:Коробка дома 8,5Х9,6, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие сборное из доски с утеплением 200мм/монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 93 кв.м; Общая площадь: 120 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -165,7 +171,7 @@ const Homepagecatalog = () => {
       price: ' 5 272 305 млн руб',
       location: 'Приморский край',
       squaremeter: '98 кв.м',
-      images: ['/House-9.png', '/House-9_1.png', '/House-9_2.png', '/House-9_3.png'],
+      images: ['./photo/House-9.png', './photo/House-9_1.png', './photo/House-9_2.png', './photo/House-9_3.png'],
       characteristics: 'Характеристики:Коробка дома 7,5Х8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 94 кв.м; Общая площадь: 98 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -180,7 +186,7 @@ const Homepagecatalog = () => {
       price: ' 5 083 018 млн руб',
       location: 'Приморский край',
       squaremeter: '143 кв.м',
-      images: ['/House-10.png', '/House-10_1.png', '/House-10_2.png', '/House-10_3.png'],
+      images: ['./photo/House-10.png', './photo/House-10_1.png', './photo/House-10_2.png', './photo/House-10_3.png'],
       characteristics: 'Характеристики:Коробка дома 8Х8,5, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие деревянное с утеплением 200мм, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 94 кв.м; Общая площадь: 143 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -195,7 +201,7 @@ const Homepagecatalog = () => {
       price: ' 6 359 963 млн руб',
       location: 'Приморский край',
       squaremeter: '141 кв.м',
-      images: ['/House-11.png', '/House-11_1.png', '/House-11_2.png', '/House-11_3.png'],
+      images: ['./photo/House-11.png', './photo/House-11_1.png', './photo/House-11_2.png', './photo/House-11_3.png'],
       characteristics: 'Характеристики:Коробка дома 11,Х8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS", с утеплением 200 мм,) ',
       projectComposition: 'Жилая площадь: 96 кв.м; Общая площадь: 141 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -210,7 +216,7 @@ const Homepagecatalog = () => {
       price: ' 5 416 309 млн руб',
       location: 'Приморский край',
       squaremeter: '111 кв.м',
-      images: ['/House-12.png', '/House-12_1.png', '/House-12_2.png', '/House-12_3.png'],
+      images: ['./photo/House-12.png', './photo/House-12_1.png', './photo/House-12_2.png', './photo/House-12_3.png'],
       characteristics: 'Характеристики:Коробка дома 7,5Х9, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 111 кв.м; Общая площадь: 111 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -225,7 +231,7 @@ const Homepagecatalog = () => {
       price: ' 5 594 929 млн руб',
       location: 'Приморский край',
       squaremeter: '119 кв.м',
-      images: ['/House-13.png', '/House-13_1.png', '/House-13_2.png', '/House-13_3.png'],
+      images: ['./photo/House-13.png', './photo/House-13_1.png', './photo/House-13_2.png', './photo/House-13_3.png'],
       characteristics: 'Характеристики:Коробка дома 13,8Х11,3, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие деревянное с утеплением 200 мм, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 112 кв.м; Общая площадь: 119 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -240,7 +246,7 @@ const Homepagecatalog = () => {
       price: ' 3 975 833 млн руб',
       location: 'Приморский край',
       squaremeter: '117 кв.м',
-      images: ['/House-14.png', '/House-14_1.png', '/House-14_2.png', '/House-14_3.png'],
+      images: ['./photo/House-14.png', './photo/House-14_1.png', './photo/House-14_2.png', './photo/House-14_3.png'],
       characteristics: 'Характеристики:Коробка дома 6Х8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 113 кв.м; Общая площадь: 117 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -255,7 +261,7 @@ const Homepagecatalog = () => {
       price: ' 5 589 796 млн руб',
       location: 'Приморский край',
       squaremeter: '123 кв.м',
-      images: ['/House-15.png', '/House-15_1.png', '/House-15_2.png', '/House-15_3.png'],
+      images: ['./photo/House-15.png', './photo/House-15_1.png', './photo/House-15_2.png', './photo/House-15_3.png'],
       characteristics: 'Характеристики:Коробка дома 8,2Х8,2, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 113 кв.м; Общая площадь: 123 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -270,7 +276,7 @@ const Homepagecatalog = () => {
       price: ' 5 778 063 млн руб',
       location: 'Приморский край',
       squaremeter: '133 кв.м',
-      images: ['/House-16.png', '/House-16_1.png', '/House-16_2.png', '/House-16_3.png'],
+      images: ['./photo/House-16.png', './photo/House-16_1.png', './photo/House-16_2.png', './photo/House-16_3.png'],
       characteristics: 'Характеристики:Коробка дома 8,Х8,2 + тамбур 2Х5,6, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 118 кв.м; Общая площадь: 133 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -285,7 +291,7 @@ const Homepagecatalog = () => {
       price: ' 5 325 837 млн руб',
       location: 'Приморский край',
       squaremeter: '119 кв.м',
-      images: ['/House-17.png', '/House-17_1.png', '/House-17_2.png', '/House-17_3.png'],
+      images: ['./photo/House-17.png', './photo/House-17_1.png', './photo/House-17_2.png', './photo/House-17_3.png'],
       characteristics: 'Характеристики:Коробка дома 8,1Х9,1, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 119 кв.м; Общая площадь: 119 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -300,7 +306,7 @@ const Homepagecatalog = () => {
       price: ' 5 784 714 млн руб',
       location: 'Приморский край',
       squaremeter: '178 кв.м',
-      images: ['/House-18.png', '/House-18_1.png', '/House-18_2.png', '/House-18_3.png'],
+      images: ['./photo/House-18.png', './photo/House-18_1.png', './photo/House-18_2.png', './photo/House-18_3.png'],
       characteristics: 'Характеристики:Коробка дома 9Х9,5 + терраса, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие деревянное с утеплением 200 мм, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 123 кв.м; Общая площадь: 178 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -315,7 +321,7 @@ const Homepagecatalog = () => {
       price: ' 6 445 969 млн руб',
       location: 'Приморский край',
       squaremeter: '134 кв.м',
-      images: ['/House-19.png', '/House-19_1.png', '/House-19_2.png', '/House-19_3.png'],
+      images: ['./photo/House-19.png', './photo/House-19_1.png', './photo/House-19_2.png', './photo/House-19_3.png'],
       characteristics: 'Характеристики:Коробка дома 10,3Х7,8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, чердачное перекрытие деревянное с утеплением 200 мм, лестница, монолитная, кровельный материал металлочерепица - МОНТЕРЕЙ) ',
       projectComposition: 'Жилая площадь: 128 кв.м; Общая площадь: 134 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -330,7 +336,7 @@ const Homepagecatalog = () => {
       price: ' 5 861 702 млн руб',
       location: 'Приморский край',
       squaremeter: '135 кв.м',
-      images: ['/House-20.png', '/House-20_1.png', '/House-20_2.png', '/House-20_3.png'],
+      images: ['./photo/House-20.png', './photo/House-20_1.png', './photo/House-20_2.png', './photo/House-20_3.png'],
       characteristics: 'Характеристики:Коробка дома 10,3Х7,8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие монолитное, лестница, монолитная, кровельный материал металлочерепица - МОНТЕРЕЙ) ',
       projectComposition: 'Жилая площадь: 129 кв.м; Общая площадь: 135 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -345,7 +351,7 @@ const Homepagecatalog = () => {
       price: ' 5 784 087 млн руб',
       location: 'Приморский край',
       squaremeter: '137 кв.м',
-      images: ['/House-21.png', '/House-21_1.png', '/House-21_2.png', '/House-2_3.png'],
+      images: ['./photo/House-21.png', './photo/House-21_1.png', './photo/House-21_2.png', './photo/House-2_3.png'],
       characteristics: 'Характеристики:Коробка дома 8,7Х9,7, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, многоэтажное перекрытие - монолитное, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 137 кв.м; Общая площадь: 137 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -360,7 +366,7 @@ const Homepagecatalog = () => {
       price: ' 6 798 000 млн руб',
       location: 'Приморский край',
       squaremeter: '148 кв.м',
-      images: ['/House-23.png', '/House-23_1.png', '/House-23_2.png', '/House-23_3.png'],
+      images: ['./photo/House-23.png', './photo/House-23_1.png', './photo/House-23_2.png', './photo/House-23_3.png'],
       characteristics: 'Характеристики:Коробка дома 12,1Х8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие деревянное с утеплением 200 мм, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 137 кв.м; Общая площадь: 148 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -371,11 +377,12 @@ const Homepagecatalog = () => {
     {
       id: 24,
       title: 'Проект "ИНДИГО"',
+      hasHitImage: false,
       description: 'Блочный дом',
       price: ' 6 555 568 млн руб',
       location: 'Приморский край',
       squaremeter: '162 кв.м',
-      images: ['/House-24.png', '/House-24_1.png', '/House-24_2.png', '/House-24_3.png'],
+      images: ['./photo/House-24.png', './photo/House-24_1.png', './photo/House-24_2.png', './photo/House-24_3.png'],
       characteristics: 'Характеристики:Коробка дома 9,4Х10, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие деревянное с утеплением 200 мм, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 144 кв.м; Общая площадь: 162 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -386,11 +393,12 @@ const Homepagecatalog = () => {
     {
       id: 25,
       title: 'Проект "АМУР"',
+      hasHitImage: false,
       description: 'Блочный дом',
       price: ' 6 967 621 млн руб',
       location: 'Приморский край',
       squaremeter: '150 кв.м',
-      images: ['/House-25.png', '/House-25_1.png', '/House-25_2.png', '/House-25_3.png'],
+      images: ['./photo/House-25.png', './photo/House-25_1.png', './photo/House-25_2.png', './photo/House-25_3.png'],
       characteristics: 'Характеристики:Коробка дома 8,7Х8,7, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие деревянное с утеплением 200 мм, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 150 кв.м; Общая площадь: 150 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -401,11 +409,12 @@ const Homepagecatalog = () => {
     {
       id: 26,
       title: 'Проект "ЛЮКС"',
+      hasHitImage: false,
       description: 'Блочный дом',
       price: ' 10 620 039 млн руб',
       location: 'Приморский край',
       squaremeter: '230 кв.м',
-      images: ['/House-26.png', '/House-26_1.png', '/House-26_2.png', '/House-26_3.png'],
+      images: ['./photo/House-26.png', './photo/House-26_1.png', './photo/House-26_2.png', './photo/House-26_3.png'],
       characteristics: 'Характеристики:Коробка дома 9,8Х14,8, монолитная плита, стены-газаблок 300 мм, внутрение стены 100/200 мм, перекрытие деревянное с утеплением 200 мм, лестница, монолитная, кровельный материал(гибкая черепица "SHINGALS") ',
       projectComposition: 'Жилая площадь: 226 кв.м; Общая площадь: 230 кв.м.',
       payment: 'Оплата: Наличные средства, ипотека, можно маткапитал, застройщик акредитованный',
@@ -477,24 +486,34 @@ const Homepagecatalog = () => {
     localStorage.setItem('formData', JSON.stringify(formData));
   }, [formData]);
 
-  return (
-    <div className="homepage-container">
+ 
+    return (
+      <div className="homepage-container">
       <h1 className="homepage-heading">Каталог домов</h1>
       <div className="property-list">
         <div className="property-cards">
           {properties.map(property => (
-            <div key={property.id}>
-              <div className="property-card">
-                <h3 onClick={() => handleTitleClick(property)}>{property.title}</h3>
-                <p>{property.description}</p>
-                <p>Цена: {property.price}</p>
-                <p>{property.squaremeter}</p>
-                <img src={property.images[0]} alt="Property" onClick={() => handleTitleClick(property)} />
+            <div key={property.id} className="property-card">
+              {/* Показываем изображение "hit", если свойство hasHitImage установлено в true */}
+              {property.hasHitImage && (
+                <div className="prod-item__mark prod-item__mark--hit">
+                  <img src="./images/1plakat.png" alt="Hit" />
+                </div>
+              )}
+              <h3 onClick={() => handleTitleClick(property)}>{property.title}</h3>
+              <p>{property.description}</p>
+              <p>Цена: {property.price}</p>
+              <p>{property.squaremeter}</p>
+              <img src={property.images[0]} alt="Property" onClick={() => handleTitleClick(property)} />
+              {/* Добавляем стиль к скрытому тексту */}
+              <div className="prod-item__hidden-text">
+                <p>{property.characteristics}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {/* Модальное окно */}
       {selectedProperty && isOpen && (
         <div className="modal">
           <div className="modal-content">

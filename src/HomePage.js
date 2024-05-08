@@ -1,14 +1,27 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
 import Oprosnik from './oprosnik';
 import Straniza from './Straniza';
 import FAQ from './FAQ'; // Import FAQ component
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import VideoForDesktop from './VideoForDesktop';
+import VideoForMobile from './VideoForMobile';
 
 const HomePage = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const openWhatsApp = () => {
     window.open('https://api.whatsapp.com/send?phone=79510050002', '_blank');
@@ -26,25 +39,28 @@ const HomePage = () => {
     window.open('https://t.me/buying_a_property', '_blank');
   };
 
-
   return (
     <div>
-      <div className="container">
-        <Straniza />
-        <div className="tn-atom" style={{ top: '160px', left: '128px', width: '185px', height: '40px', zoom: '1.016' }}>
-        </div>
+      <div className="video-container">
+        {/* Условный рендеринг: для экранов шире 767px показываем видео для десктопа, иначе - видео для мобильной адаптации */}
+        {windowWidth > 767 ? <VideoForDesktop /> : <VideoForMobile />}
       </div>
 
       <div className="homepage-container">
+        <div className="container">
+          <Straniza />
+          <div className="tn-atom" style={{ top: '160px', left: '128px', width: '185px', height: '40px', zoom: '1.016' }}>
+          </div>
+        </div>
+
         <h1 className="homepage-heading">Пройди опрос и получи бесплатную консультацию!</h1>
         <Oprosnik />
         <div className="faq-container">
-        
           <FAQ />
         </div>
         <div className="property-list"></div>
       </div>
-   
+
       <footer className="footer">
         <Container>
           <Row>
@@ -60,23 +76,18 @@ const HomePage = () => {
               <div className="footer-menu">
                 <h4>ATARI</h4>
                 <ul>
-                 
-                    <Link to="/" className="footer-link">
-                      <Button variant="outline-dark">О компании</Button>
-                    </Link>
-               
-                    <Link to="/property/:id" className="footer-link">
-                      <Button variant="outline-dark">Контакты</Button>
-                    </Link>
-               
-                    <Link to="/homepage-catalog" className="footer-link">
-                      <Button variant="outline-dark">Дома</Button>
-                    </Link>
-                  
-                    <Link to="/real-estate-catalog" className="footer-link">
-                      <Button variant="outline-dark">Новостройки</Button>
-                    </Link>
-               
+                  <Link to="/" className="footer-link">
+                    <Button variant="outline-dark">О компании</Button>
+                  </Link>
+                  <Link to="/property/:id" className="footer-link">
+                    <Button variant="outline-dark">Контакты</Button>
+                  </Link>
+                  <Link to="/homepage-catalog" className="footer-link">
+                    <Button variant="outline-dark">Дома</Button>
+                  </Link>
+                  <Link to="/real-estate-catalog" className="footer-link">
+                    <Button variant="outline-dark">Новостройки</Button>
+                  </Link>
                 </ul>
               </div>
             </Col>
@@ -102,6 +113,5 @@ const HomePage = () => {
     </div>
   );
 };
-
 
 export default HomePage;

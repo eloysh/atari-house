@@ -47,7 +47,7 @@ const FAQ = () => {
 
   const styles = {
     titleTextColor: '#007bff',
-    rowTitleColor: '#007bff',
+    rowTitleColor: '#055e78',
     rowContentColor: 'grey',
     rowContentTextSize: '16px',
     rowContentPaddingTop: '10px',

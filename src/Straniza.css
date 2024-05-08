@@ -1,196 +1,196 @@
 
 .container-block {
-  display: flex;
-  padding: 40px;
-  margin-top: 20px;
-  margin-right: 20px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    display: flex;
+    padding: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-.container-block > * {
-  margin-left: 20px;
-  flex-grow: 1;
-}
-
-.container-block:last-child {
-  margin-right: 0;
-}
-
-.container-block:hover {
-  background-color: #e0e0e0;
-}
-.first-block{
-  background-image: url(./13.jpg);
-}
-.second-block{
-  background-image: url(./41.png);
-}
-.first-block,
-.second-block,
-.third-block {
-
-  flex-basis: calc(33.33% - 10px);
-
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.first-block h2,
-.second-block h2,
-.third-block h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 1px;
-}
-
-.first-block p,
-.second-block p,
-.third-block p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 2px;
-}
-
-.first-block button,
-.second-block button,
-.third-block button {
-
-  margin-top: 10px;
-
-  background-color: #1575d4;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.first-block button:hover,
-.second-block button:hover,
-.third-block button:hover {
-  background-color: #1361ad;
-}
-
-
-
-@media screen and (max-width: 768px) {
+  }
+  
+  .container-block > * {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+  
+  .container-block:last-child {
+    margin-right: 0;
+  }
+  
+  .container-block:hover {
+    background-color: #e0e0e0;
+  }
+  .first-block{
+    background-color: #1361ad;
+  }
+  .second-block{
+    background-color: #e0e0e0;
+  }
   .first-block,
   .second-block,
   .third-block {
-    flex-basis: 100%;
+  
+    flex-basis: calc(33.33% - 10px);
+  
+    background-color: #3068755d;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .first-block h2,
+  .second-block h2,
+  .third-block h2 {
+    font-size: 24px;
+    color: #333;
     margin-bottom: 1px;
   }
-
-}
-
-.first-block,
-.second-block,
-.third-block {
-  margin-top: 90px;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 280px;
-  height: 306px;
-}
-
-
-.first-block:hover,
-.second-block:hover,
-.third-block:hover {
-
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-
-.first-block h2,
-.second-block h2,
-.third-block h2 {
-  margin: 10px;
-
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
-}
-
-
-.first-block:hover h2,
-.second-block:hover h2,
-.third-block:hover h2 {
-  color: #1575d4;
-}
-
-.first-block p,
-.second-block p,
-.third-block p {
-
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
-  transition: color 0.3s ease;
-}
-
-
-.first-block:hover p,
-.second-block:hover p,
-.third-block:hover p {
-  color: #1575d4;
-
-}
-
-.secondary-button {
-  background-color: #fff;
-  color: #1575d4;
-  border: 2px solid #1575d4;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.secondary-button:hover {
-  background-color: #1575d4;
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .container-block {
   
-    flex-direction: column; /* Изменяем направление контейнера на вертикальное */
-    padding: 20px; /* Уменьшаем внутренний отступ */
-    margin: 10px; /* Уменьшаем внешний отступ */
+  .first-block p,
+  .second-block p,
+  .third-block p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 2px;
   }
-
-  .container-block > * {
-    margin-left: 0; /* Убираем левый отступ у элементов внутри контейнера */
-    margin-bottom: 20px; /* Добавляем отступ между элементами */
-    flex-basis: auto; /* Снимаем жестко заданный размер блоков */
+  
+  .first-block button,
+  .second-block button,
+  .third-block button {
+  
+    margin-top: 10px;
+  
+    background-color: #285056;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
-
+  
+  .first-block button:hover,
+  .second-block button:hover,
+  .third-block button:hover {
+    background-color: #1361ad;
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .first-block,
+    .second-block,
+    .third-block {
+      flex-basis: 100%;
+      margin-bottom: 1px;
+    }
+  
+  }
+  
   .first-block,
   .second-block,
   .third-block {
+   
   
-    width: calc(100% - 40px); /* Устанавливаем ширину блоков, учитывая внутренние отступы */
-    height: auto; /* Автоматический размер высоты для адаптивности контента */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    height: 306px;
   }
-}
-
+  
+  
+  .first-block:hover,
+  .second-block:hover,
+  .third-block:hover {
+  
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .first-block h2,
+  .second-block h2,
+  .third-block h2 {
+    margin: 10px;
+  
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .first-block:hover h2,
+  .second-block:hover h2,
+  .third-block:hover h2 {
+    color: #1575d4;
+  }
+  
+  .first-block p,
+  .second-block p,
+  .third-block p {
+  
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .first-block:hover p,
+  .second-block:hover p,
+  .third-block:hover p {
+    color: #1575d4;
+  
+  }
+  
+  .secondary-button {
+    background-color: #fff;
+    color: #1575d4;
+    border: 2px solid #1575d4;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .secondary-button:hover {
+    background-color: #1575d4;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container-block {
+    
+      flex-direction: column; /* Изменяем направление контейнера на вертикальное */
+      padding: 20px; /* Уменьшаем внутренний отступ */
+      margin: 10px; /* Уменьшаем внешний отступ */
+    }
+  
+    .container-block > * {
+      margin-left: 0; /* Убираем левый отступ у элементов внутри контейнера */
+      margin-bottom: 20px; /* Добавляем отступ между элементами */
+      flex-basis: auto; /* Снимаем жестко заданный размер блоков */
+    }
+  
+    .first-block,
+    .second-block,
+    .third-block {
+    
+      width: calc(100% - 40px); /* Устанавливаем ширину блоков, учитывая внутренние отступы */
+      height: auto; /* Автоматический размер высоты для адаптивности контента */
+    }
+  }

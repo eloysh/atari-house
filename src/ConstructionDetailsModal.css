@@ -1,150 +1,4 @@
-.construction-details-modal {
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  button:before {
-    opacity: .75;
-    color: #ea0e0e;
-}
-/* ConstructionDetailsModal.css */
-
-.property-info {
-  margin-bottom: 20px; /* Add margin at the bottom */
-}
-
-.property-info p {
-  margin: 5px 0; /* Add margin to paragraphs */
-}
-
-/* Form styling */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input[type="text"],
-input[type="tel"],
-button {
-  margin-bottom: 10px; /* Add margin between input fields and button */
-  padding: 8px; /* Add padding to input fields and button */
-  border: 1px solid #ccc; /* Add border to input fields and button */
-  border-radius: 5px; /* Add border radius */
-  font-size: 16px; /* Adjust font size */
-}
-
-input[type="text"],
-input[type="tel"] {
-  width: 100%; /* Set input width to 100% */
-}
-
-button[type="submit"] {
-  background-color: #007bff; /* Change background color */
-  color: #fff; /* Change text color */
-  cursor: pointer; /* Add cursor pointer */
-  transition: background-color 0.3s; /* Add transition effect */
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3; /* Change background color on hover */
-}
-
-@media (max-width: 768px) {
-  /* Adjust form styles for mobile devices */
-  form {
-    padding: 0 20px; /* Add padding to the form */
-  }
-
-  input[type="text"],
-  input[type="tel"] {
-    font-size: 14px; /* Reduce font size */
-  }
-  
-}
-
-input[type="text"] {
-  width: 20%;
-  /* padding: 10px; */
-  /* border: 1px solid #ccc; */
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-.modal-content {
-  height: 100%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  /* max-height: 90%; */
-  overflow: auto;
-}
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  .property-info {
-    margin-top: 20px;
-  }
-  
-  .property-info p {
-    margin-top: 11px;
-    color: #0d0c0ccc;
-    text-align: center;
-}
-  
-  .gallery {
-    position: relative;
-    width: 80%;
-    height: 300px; /* Высота галереи на мобильных устройствах */
-  }
-  
-  .gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
-
-/* ConstructionDetailsModal.css */
-
-/* Стили для модального окна */
+/* Styles for Construction Details Modal */
 .construction-details-modal {
   position: fixed;
   top: 0;
@@ -155,43 +9,66 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999; /* Ensure modal is on top of other elements */
 }
 
+.modal-content {
+  background-color: white;
+  width: 90%;
+  max-width: 500px; /* Limit width for larger screens */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds height */
+}
 
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; /* Dark gray color */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
 
-/* Стили для информации о свойстве */
+.close-button:hover {
+  color: #000; /* Darker color on hover */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to separate from content */
+}
+
 .property-info {
-  margin-top: 20px;
-}
-
-.property-info p {
-  margin-top: 11px;
-  color: #0d0c0ccc;
   text-align: center;
 }
 
-/* Стили для галереи изображений */
+.property-info p {
+  margin: 10px 0; /* Add margin to paragraphs */
+  color: #0d0c0ccc; /* Light gray text color */
+}
+
+/* Gallery styles */
 .gallery {
-  position: relative;
-  width: 100%; /* Изменение ширины на 100% для полного заполнения контейнера */
-  height: 200px; /* Уменьшение высоты галереи на мобильных устройствах */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Add margin to separate from other content */
 }
 
 .gallery img {
-
-  /* text-align: center; */
-  /* display: flex; */
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Ensure images fill container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure images don't exceed container width */
   border-radius: 5px;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  align-content: stretch;
+  margin: 5px; /* Add space between images */
 }
-/* Стили для кнопок переключения изображений */
+
+/* Previous and Next buttons */
 .prev-btn,
 .next-btn {
   position: absolute;
@@ -213,33 +90,12 @@ input[type="text"] {
   right: 10px;
 }
 
-/* Медиа-запрос для мобильных устройств */
+/* Media query for mobile devices */
 @media (max-width: 768px) {
-  .gallery {
-    height: 150px; /* Уменьшение высоты галереи на мобильных устройствах */
-  }
   .modal-content {
-    background-color: white;
-    width: 370px;
-    height: 800px;
-    border-radius: 10px;
-}
-  .prev-btn,
-  .next-btn {
-    padding: 8px; /* Уменьшение размера кнопок на мобильных устройствах */
+    width: 90%;
+    height: auto; /* Allow content to determine height */
+    max-height: 90vh; /* Limit height relative to viewport */
+    padding: 15px; /* Adjust padding for smaller screens */
   }
-  .gallery img {
-    /* margin-left: 300px; */
-    /* text-align: center; */
-    /* display: flex; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    align-content: stretch;
-}
 }

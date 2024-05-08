@@ -18,7 +18,7 @@ const Straniza = () => {
   }, []); // Выполняем при монтировании компонента
 
 
-  const images = ['House-20.png', 'House-23.png', 'House-15.png']; // Путь к изображениям
+  const images = ['./photo/House-20.png', './photo/House-23.png', './photo/House-15.png']; // Путь к изображениям
 
 
   // Функция для автоматической смены изображений с интервалом
@@ -39,18 +39,16 @@ const Straniza = () => {
   return (
     <div className="container-block">
 
-      {/* Первый блок */}
-      <div className="first-block">
-        <h2>Ипотека без первоначального взноса</h2>
-        <h4>Успейте купить квартиру или построить дом с минимальной переплатой!</h4>
-        <div className="FormContainer">
-          <p>от 0,1%</p>
-          <Link to="/mortgage">
-
-            <button>Калькулятор</button>
-          </Link>
-        </div>
+<div className="first-block animated-block">
+      <h2>Помогаем с получением ипотеки</h2>
+      <h4>без залога и поручителя</h4>
+      <div className="FormContainer">
+        <p>ипотека со ставкой от 0,7%</p>
+        <Link to="/mortgage">
+          <button className="animated-button">Калькулятор</button>
+        </Link>
       </div>
+    </div>
       
       {/* Третий блок */}
       <div className="container" style={{ maxHeight: maxHeight }}>

@@ -1,5 +1,3 @@
-
-// index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -10,14 +8,16 @@ import MortgageCalculator from './MortgageCalculator';
 import RealEstateCatalog from './RealEstateCatalog';
 import MortgageDescription from './MortgageDescription';
 import Homepagecatalog from './homepagecatalog';
-import ConstructionDetails from './ConstructionDetails'; // Импортируем ConstructionDetails
-import propertiesData from './propertiesData'; // Импортируем propertiesData
+import ConstructionDetails from './ConstructionDetails'; 
+import propertiesData from './propertiesData'; 
+
+
 
 ReactDOM.render(
-
   <Router>
     <div>
       <Menu />
+      
       <Routes>
         <Route exact path="/" element={<HomePage />} />
 
@@ -30,5 +30,4 @@ ReactDOM.render(
     </div>
   </Router>,
   document.getElementById('root')
-
 );

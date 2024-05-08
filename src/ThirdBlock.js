@@ -6,7 +6,7 @@ import './ThirdBlock.css'
 
 const ThirdBlock = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['House-20.png', 'House-23.png', 'House-15.png']; // Path to images
+  const images = ['./photo/House-20.png', './photo/House-23.png', './photo/House-15.png']; // Path to images
 
 
   useEffect(() => {

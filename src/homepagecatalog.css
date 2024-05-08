@@ -30,6 +30,14 @@
   flex-direction: row;
 }
 
+.prod-item__mark--hit {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 0; /* Расположение вверху */
+  right: 0; /* Расположение справа */
+}
+
+
+
 .property-card {
   text-align: center;
   background-color: #e4d8d8;
@@ -55,6 +63,22 @@
   border-radius: 5px;
   cursor: pointer;
 }
+/* ConstructionCard.css */
+
+.property-card__image-container {
+  position: relative;
+}
+
+.hit-image {
+  position: absolute;
+  top: -10px; /* Расположение относительно верхнего края */
+  right: -10px; /* Расположение относительно правого края */
+  z-index: 1; /* Чтобы быть выше основного изображения */
+}
+
+.hit-image img {
+  width: 50px; /* Размер изображения hit */
+}
 
 /* Стили для модального окна */
 .modal {
@@ -71,57 +95,60 @@
 
 .modal-content {
   width: 90%;
-  
   background-color: white;
   border-radius: 10px;
   padding: 20px;
 }
-.tabs{
+
+.tabs {
   margin-right: 150px;
-  /* margin-left: 130px; */
   margin-top: 90px;
-  top: 5px;
-  /* right: 5px; */
 }
+
 .close {
   margin-right: 150px;
-  /* margin-left: 130px; */
   margin-top: 90px;
-  top: 5px;
-  /* right: 5px; */
 }
 
 @media screen and (max-width: 768px) {
   /* Мобильная адаптация */
-
   .property-card {
     width: 100%; /* Полная ширина карточки на мобильных устройствах */
   }
-
   .modal-content {
     width: 90%; /* Ширина модального окна на мобильных устройствах */
-
     max-height: 90%; /* Максимальная высота модального окна на мобильных устройствах */
     padding: 20px; /* Поля внутри модального окна на мобильных устройствах */
   }
+}
+/* ConstructionCard.css */
 
+/* ConstructionCard.css */
 
-    .close {
-      
-        margin-right: 20px;
-    
-      margin-top: 70px;
-      top: 5px;
-      right: 5px;
-  }
+/* Дополнительные стили для изображения в карточке */
+.property-card {
+  position: relative;
+}
 
+.property-image {
+  position: relative;
+}
 
-  .property-info {
-    display: flex; /* Отображение информации о свойстве в одну строку на мобильных устройствах */
-    flex-direction: row; /* Направление элементов информации о свойстве на мобильных устройствах */
-    flex-wrap: wrap; /* Перенос элементов информации о свойстве на новую строку на мобильных устройствах */
-    align-content: stretch; /* Распределение элементов информации о свойстве по высоте на мобильных устройствах */
-    justify-content: flex-start; /* Выравнивание элементов информации о свойстве слева на мобильных устройствах */
-    align-items: baseline; /* Выравнивание элементов информации о свойстве по базовой линии на мобильных устройствах */
-  }
+.with-hit-image .hit-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.prod-item__mark, .prod-item__mark--hit {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  width: 99px;
+  height: 99px;
+
+  background-position: -99px 0;
+  /* width: max-content; */
+  opacity: 2;
+
+  /* position: static; */
 }
